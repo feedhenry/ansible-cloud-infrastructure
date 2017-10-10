@@ -1,0 +1,4 @@
+- name: Creating Key Pair kp-{{ cluster_name }}
+  os_keypair:
+      name: kp-{{ cluster_name }}
+      state: present

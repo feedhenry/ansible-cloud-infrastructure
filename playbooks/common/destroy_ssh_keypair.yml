@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Destroy SSH Key Pair {{ provider_type }}
+    include_role:
+      name: "{{ provider_type }}"
+      tasks_from: destroy_ssh_keypair.yml

@@ -1,0 +1,3 @@
+---
+- name: Destroy Infrastructure {{ provider_type }}
+  include: common/destroy_ssh_keypair.yml
